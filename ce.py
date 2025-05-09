@@ -21,9 +21,9 @@ for i in data:
                 general[j][j] = specific[j] # Set general hypothesis to specific value where mismatch occurs
             else:
                 general[j][j] = "?" # Keep '?' where there's no mismatch
-print(f"\nStep {data.index(i)+1} of Candidate Elimination Algorithm")
-print(f"Specific Hypothesis: {specific}")
-print(f"General Hypothesis: {general}")
+    print(f"\nStep {data.index(i)+1} of Candidate Elimination Algorithm")
+    print(f"Specific Hypothesis: {specific}")
+    print(f"General Hypothesis: {general}")
 # Remove all redundant general hypotheses that contain only '?'
 final_general = [g for g in general if '?' in g]
 # Print the final results
